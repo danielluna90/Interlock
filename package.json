@@ -12,7 +12,7 @@
   "license": "GPL-3.0-only",
   "packageManager": "pnpm@10.29.2",
   "devDependencies": {
-    "@biomejs/biome": "2.3.14",
+    "@biomejs/biome": "catalog:",
     "husky": "^9.1.7"
   }
 }

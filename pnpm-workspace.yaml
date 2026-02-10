@@ -1,0 +1,5 @@
+packages:
+  - 'apps/*'
+  - 'services/*'
+catalog:
+  '@biomejs/biome': 2.3.14
