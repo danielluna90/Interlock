@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
     "lint": "biome check",
     "prepare": "husky"
   },
