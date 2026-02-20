@@ -1,0 +1,17 @@
+{
+  "name": "@interlock/vitest-config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./base": "./vitest.config.ts",
+    "./web": "./vitest.web.config.ts",
+    "./react-native": "./vitest.react-native.config.ts",
+    "./index": "./index.ts"
+  },
+  "devDependencies": {
+    "vitest": "catalog:",
+    "@vitest/ui": "catalog:",
+    "@vitest/coverage-v8": "catalog:"
+  }
+}

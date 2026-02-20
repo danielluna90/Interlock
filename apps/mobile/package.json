@@ -9,7 +9,9 @@
     "web": "expo start --web",
     "lint": "biome check",
     "typecheck": "tsc --noEmit",
-    "build": "expo export"
+    "build": "expo export",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
@@ -40,8 +42,11 @@
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
+    "@interlock/vitest-config": "workspace:*",
+    "@testing-library/react-native": "catalog:",
     "@types/react": "~19.1.0",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vitest": "catalog:"
   },
   "private": true
 }

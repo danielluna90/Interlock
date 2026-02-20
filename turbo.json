@@ -8,8 +8,7 @@
       "dependsOn": ["^typecheck"]
     },
     "test": {
-      "dependsOn": ["^test"],
-      "outputs": ["coverage/**"]
+      "dependsOn": ["^test"]
     },
     "test:watch": {
       "cache": false,
