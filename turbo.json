@@ -15,7 +15,7 @@
       "persistent": true
     },
     "build": {
-      "dependsOn": ["lint", "typecheck", "^build"],
+      "dependsOn": ["lint", "typecheck", "test", "^build"],
       "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
     "dev": {
