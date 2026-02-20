@@ -11,5 +11,9 @@ catalog:
   '@vitest/coverage-v8': ^3.0.0
   '@testing-library/react': ^16.0.0
   '@testing-library/react-native': ^13.0.0
+  'tsup': ^8.4.0
 
 nodeLinker: isolated
+onlyBuiltDependencies:
+  - esbuild
+  - sharp

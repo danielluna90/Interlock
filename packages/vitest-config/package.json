@@ -3,13 +3,34 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "./base": "./vitest.config.ts",
-    "./web": "./vitest.web.config.ts",
-    "./react-native": "./vitest.react-native.config.ts",
-    "./index": "./index.ts"
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./base": {
+      "import": "./dist/vitest.config.js",
+      "types": "./dist/vitest.config.d.ts"
+    },
+    "./web": {
+      "import": "./dist/vitest.web.config.js",
+      "types": "./dist/vitest.web.config.d.ts"
+    },
+    "./react-native": {
+      "import": "./dist/vitest.react-native.config.js",
+      "types": "./dist/vitest.react-native.config.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "catalog:",
     "vitest": "catalog:",
     "@vitest/ui": "catalog:",
     "@vitest/coverage-v8": "catalog:"
