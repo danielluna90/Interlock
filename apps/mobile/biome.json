@@ -3,17 +3,11 @@
   "root": false,
   "extends": "//",
   "files": {
-    "includes": ["**", "!.next", "!dist", "!build"]
+    "includes": ["**", "!dist", "!.expo"]
   },
   "linter": {
     "domains": {
-      "next": "recommended",
       "react": "recommended"
-    }
-  },
-  "css": {
-    "parser": {
-      "tailwindDirectives": true
     }
   }
 }
