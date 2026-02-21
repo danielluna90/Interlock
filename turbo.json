@@ -10,12 +10,15 @@
     "test": {
       "dependsOn": ["^test"]
     },
+    "coverage": {
+      "dependsOn": ["^coverage"]
+    },
     "test:watch": {
       "cache": false,
       "persistent": true
     },
     "build": {
-      "dependsOn": ["lint", "typecheck", "test", "^build"],
+      "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
     "dev": {

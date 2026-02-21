@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "build": "expo export",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
@@ -44,6 +45,8 @@
     "@biomejs/biome": "catalog:",
     "@interlock/vitest-config": "workspace:*",
     "@testing-library/react-native": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "@vitest/ui": "catalog:",
     "@types/react": "~19.1.0",
     "typescript": "catalog:",
     "vitest": "catalog:"
